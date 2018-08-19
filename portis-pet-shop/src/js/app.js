@@ -34,7 +34,7 @@ App = {
         } else {
             // If no injected web3 instance is present,
             // we set Portis as the web3 provider
-            web3 = new Web3(new window.Portis.PortisProvider({ network: 'ropsten', apiKey: 'eb57240994af9de4ee621d0290a0e75a' }));
+            web3 = new Web3(new window.Portis.PortisProvider({ network: 'kovan', apiKey: 'eb57240994af9de4ee621d0290a0e75a' }));
             App.web3Provider = web3.currentProvider;
         }
         web3 = new Web3(App.web3Provider);
