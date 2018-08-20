@@ -4,7 +4,7 @@
 
 Based on the [Truffle Pet Shop DApp](truffle), using Portis as the web3 provider.
 
-[Try it out!](https://embed.plnkr.co/iy26tBCP4WkrpjPZS7bn/)
+[Try it out!](https://embed.plnkr.co/rSO293vXADnDT96nCMyr/)
 
 ## Setup
 
