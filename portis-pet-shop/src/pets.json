@@ -1,130 +1,130 @@
 [
-  {
-    "id": 0,
-    "name": "Frieda",
-    "picture": "https://placedog.net/400/400",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Lisco, Alabama"
-  },
-  {
-    "id": 1,
-    "name": "Gina",
-    "picture": "https://placedog.net/410/410",
-    "age": 3,
-    "breed": "Scottish Terrier",
-    "location": "Tooleville, West Virginia"
-  },
-  {
-    "id": 2,
-    "name": "Collins",
-    "picture": "https://placedog.net/420/420",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Freeburn, Idaho"
-  },
-  {
-    "id": 3,
-    "name": "Melissa",
-    "picture": "https://placedog.net/430/430",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Camas, Pennsylvania"
-  },
-  {
-    "id": 4,
-    "name": "Jeanine",
-    "picture": "https://placedog.net/440/440",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Gerber, South Dakota"
-  },
-  {
-    "id": 5,
-    "name": "Elvia",
-    "picture": "https://placedog.net/450/450",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Innsbrook, Illinois"
-  },
-  {
-    "id": 6,
-    "name": "Latisha",
-    "picture": "https://placedog.net/460/460",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Soudan, Louisiana"
-  },
-  {
-    "id": 7,
-    "name": "Coleman",
-    "picture": "https://placedog.net/470/470",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Jacksonwald, Palau"
-  },
-  {
-    "id": 8,
-    "name": "Nichole",
-    "picture": "https://placedog.net/480/480",
-    "age": 2,
-    "breed": "French Bulldog",
-    "location": "Honolulu, Hawaii"
-  },
-  {
-    "id": 9,
-    "name": "Fran",
-    "picture": "https://placedog.net/490/490",
-    "age": 3,
-    "breed": "Boxer",
-    "location": "Matheny, Utah"
-  },
-  {
-    "id": 10,
-    "name": "Leonor",
-    "picture": "https://placedog.net/500/500",
-    "age": 2,
-    "breed": "Boxer",
-    "location": "Tyhee, Indiana"
-  },
-  {
-    "id": 11,
-    "name": "Dean",
-    "picture": "https://placedog.net/510/510",
-    "age": 3,
-    "breed": "Golden Retriever",
-    "location": "Windsor, Montana"
-  },
-  {
-    "id": 12,
-    "name": "Stevenson",
-    "picture": "https://placedog.net/520/520",
-    "age": 3,
-    "breed": "French Bulldog",
-    "location": "Kingstowne, Nevada"
-  },
-  {
-    "id": 13,
-    "name": "Kristina",
-    "picture": "https://placedog.net/530/530",
-    "age": 4,
-    "breed": "Golden Retriever",
-    "location": "Sultana, Massachusetts"
-  },
-  {
-    "id": 14,
-    "name": "Ethel",
-    "picture": "https://placedog.net/540/540",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Broadlands, Oregon"
-  },
-  {
-    "id": 15,
-    "name": "Terry",
-    "picture": "https://placedog.net/550/550",
-    "age": 2,
-    "breed": "Golden Retriever",
-    "location": "Dawn, Wisconsin"
-  }
+    {
+        "id": 0,
+        "name": "Frieda",
+        "picture": "https://i.imgur.com/1Wv0I1k.jpg",
+        "age": 3,
+        "breed": "Scottish Terrier",
+        "location": "Lisco, Alabama"
+    },
+    {
+        "id": 1,
+        "name": "Gina",
+        "picture": "https://i.imgur.com/Rd3Td1Y.jpg",
+        "age": 3,
+        "breed": "Scottish Terrier",
+        "location": "Tooleville, West Virginia"
+    },
+    {
+        "id": 2,
+        "name": "Collins",
+        "picture": "https://i.imgur.com/wDFBZyG.jpg",
+        "age": 2,
+        "breed": "French Bulldog",
+        "location": "Freeburn, Idaho"
+    },
+    {
+        "id": 3,
+        "name": "Melissa",
+        "picture": "https://i.imgur.com/UkRvvY9.jpg",
+        "age": 2,
+        "breed": "Boxer",
+        "location": "Camas, Pennsylvania"
+    },
+    {
+        "id": 4,
+        "name": "Jeanine",
+        "picture": "https://i.imgur.com/MdekqGS.jpg",
+        "age": 2,
+        "breed": "French Bulldog",
+        "location": "Gerber, South Dakota"
+    },
+    {
+        "id": 5,
+        "name": "Elvia",
+        "picture": "https://i.imgur.com/tpXFaLL.jpg",
+        "age": 3,
+        "breed": "French Bulldog",
+        "location": "Innsbrook, Illinois"
+    },
+    {
+        "id": 6,
+        "name": "Latisha",
+        "picture": "https://i.imgur.com/XBgQD33.jpg",
+        "age": 3,
+        "breed": "Golden Retriever",
+        "location": "Soudan, Louisiana"
+    },
+    {
+        "id": 7,
+        "name": "Coleman",
+        "picture": "https://i.imgur.com/h8NsY4p.jpg",
+        "age": 3,
+        "breed": "Golden Retriever",
+        "location": "Jacksonwald, Palau"
+    },
+    {
+        "id": 8,
+        "name": "Nichole",
+        "picture": "https://i.imgur.com/OEOL8Jx.jpg",
+        "age": 2,
+        "breed": "French Bulldog",
+        "location": "Honolulu, Hawaii"
+    },
+    {
+        "id": 9,
+        "name": "Fran",
+        "picture": "https://i.imgur.com/ClIZl0B.jpg",
+        "age": 3,
+        "breed": "Boxer",
+        "location": "Matheny, Utah"
+    },
+    {
+        "id": 10,
+        "name": "Leonor",
+        "picture": "https://i.imgur.com/8URJI7q.jpg",
+        "age": 2,
+        "breed": "Boxer",
+        "location": "Tyhee, Indiana"
+    },
+    {
+        "id": 11,
+        "name": "Dean",
+        "picture": "https://i.imgur.com/3sNPpY5.jpg",
+        "age": 3,
+        "breed": "Golden Retriever",
+        "location": "Windsor, Montana"
+    },
+    {
+        "id": 12,
+        "name": "Stevenson",
+        "picture": "https://i.imgur.com/IY132PE.jpg",
+        "age": 3,
+        "breed": "French Bulldog",
+        "location": "Kingstowne, Nevada"
+    },
+    {
+        "id": 13,
+        "name": "Kristina",
+        "picture": "https://i.imgur.com/u1wf3v7.jpg",
+        "age": 4,
+        "breed": "Golden Retriever",
+        "location": "Sultana, Massachusetts"
+    },
+    {
+        "id": 14,
+        "name": "Ethel",
+        "picture": "https://i.imgur.com/BPSo9Cg.jpg",
+        "age": 2,
+        "breed": "Golden Retriever",
+        "location": "Broadlands, Oregon"
+    },
+    {
+        "id": 15,
+        "name": "Terry",
+        "picture": "https://i.imgur.com/doqKS7K.jpg",
+        "age": 2,
+        "breed": "Golden Retriever",
+        "location": "Dawn, Wisconsin"
+    }
 ]
