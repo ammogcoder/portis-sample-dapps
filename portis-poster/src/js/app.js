@@ -27,8 +27,7 @@ App = {
   },
 
   initIpfs: function() {
-    //ipfs = IpfsApi('localhost', '5001');
-    ipfs = IpfsApi('hardbin.com', '443', { protocol: 'https' });
+    ipfs = IpfsApi('localhost', '5001');    
     // ipfs = IpfsApi('ipfs.infura.io', '5001', { protocol: 'https' });
     return App.initContract();
   },
