@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "Sebastian",
+        "picture": "https://cryptopuppers.portis.io/img/dog2.png"
+    },
+    {
+        "id": 1,
+        "name": "Apollo",
+        "picture": "https://cryptopuppers.portis.io/img/dog4.png"
+    },
+    {
+        "id": 2,
+        "name": "Benji",
+        "picture": "https://cryptopuppers.portis.io/img/dog1.png"
+    },
+    {
+        "id": 3,
+        "name": "Snuggles",
+        "picture": "https://cryptopuppers.portis.io/img/dog6.png"
+    }
+]

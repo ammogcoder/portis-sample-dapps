@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CryptoPuppers</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .owner-section {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 80vw;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            display: block;
+            padding: 20px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            background-color: #f5f5f5;
+            border-right: 1px solid #eee;
+        }
+
+        .container-fluid {
+            background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            padding-bottom: 50px;
+        }
+
+        .title {
+            margin-bottom: 15%;
+            font-family: 'Chakra Petch', sans-serif;
+            color: #FFF;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background-color: rgba(0,0,0,0.3);
+            border: none;
+            color: #FFF;
+        }
+
+        .panel-heading {
+            background: rgba(0,0,0,0.5) !important;
+            color: #FFF !important;
+            border: none !important;
+            text-align: center !important;
+        }
+
+        .panel-title {
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .btn-primary {
+            background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+            border: none;
+        }
+
+        .copyright {
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+
+    <!-- Portis -->
+    <script src="https://cdn.jsdelivr.net/npm/portis/dist/bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div style="display: none" class="col-sm-3 col-md-2 sidebar portisAdvanceConf">
+                <div class="text-center">
+                    <h4>Portis Configuration</h4>
+                    <br />
+                    <form>
+                        <div class="form-group">
+                            <label for="portisConfApiKey">Api Key</label>
+                            <input type="text" class="form-control" id="portisConfApiKey" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="portisConfNetwork">Network</label>
+                            <input type="text" class="form-control" id="portisConfNetwork" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="portisConfInfuraApiKey">Infura Api Key</label>
+                            <input type="text" class="form-control" id="portisConfInfuraApiKey" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="portisConfProviderNodeUrl">Provider Node Url</label>
+                            <input type="text" class="form-control" id="portisConfProviderNodeUrl" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="portisConfScope">Scope</label>
+                            <input type="text" class="form-control" id="portisConfScope" placeholder="[&quot;email&quot;]">
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="portisConfEnv" id="portisConfEnvProd" value="https://app.portis.io">
+                                Prod
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-default" id="updatePortisConf">Update</button>
+                    </form>
+
+                    <br>
+                    <br>
+
+                    <h4>Portis Features</h4>
+                    <br>
+                    <button class="btn btn-default" id="openPortisButton">Open Portis</button>
+                    <br>
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <label for="defaultEmail">Default Email</label>
+                            <input type="text" class="form-control" id="defaultEmail" placeholder="">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="defaultEmailEditable">
+                                Editable
+                            </label>
+                        </div>
+                        <button type="button" class="btn btn-default" id="setDefaultEmailButton">Set</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 main">
+                <div class="title">
+                    <h1 class="text-center">CryptoPuppers</h1>
+                    <h4 class="text-center">Digital doggos need a home too 🐶</h4>
+                </div>
+
+                <div id="petsRow" class="row">
+                    <!-- PETS LOAD HERE -->
+                </div>
+                <div class="row">
+
+                    <!-- SEND TOKEN -->
+                    <div style="display: none" class="col-sm-6 col-md-4 col-lg-3 portisAdvanceConf">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Send Token</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="destAddress">Destination Address</label>
+                                        <input type="text" class="form-control" id="destAddress" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="erc20ContractAddress">ERC20 Contract Address</label>
+                                        <input type="text" class="form-control" id="erc20ContractAddress" value="0x641f40c85e070b92ce14b25c21609a68cd2d8a53">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="transferTokensAmount">Transfer Amount (tokens)</label>
+                                        <input type="number" class="form-control" id="transferTokensAmount" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="transferEthAmount">Transfer Amount (ETH)</label>
+                                        <input type="number" class="form-control" id="transferEthAmount" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tokenDecimals">Token Decimals</label>
+                                        <input type="number" class="form-control" id="tokenDecimals" value="18">
+                                    </div>
+                                    <button type="button" class="btn btn-default" id="sendTokenButton">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EVENTS -->
+                    <div style="display: none" class="col-sm-6 col-md-4 col-lg-3 portisAdvanceConf">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Events</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="watchEvents" id="watchEventsOn" value="true">
+                                            On
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="watchEvents" id="watchEventsOff" value="false"
+                                                checked>
+                                            Off
+                                        </label>
+                                    </div>
+                                </form>
+                                <div id="eventsContainer"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <p class="copyright">Doggo images courtesy of <a href="https://www.freevector.com/happy-dog-face-vector-25531#">FreeVector.com</a></p>
+    </div>
+
+    <div id="petTemplate" style="display: none;">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="panel panel-default panel-pet">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Scrappy</h3>
+                </div>
+                <div class="panel-body">
+                    <img alt="140x140" class="img-rounded img-center" style="width: 100%;" src="">
+                    <br />
+                    <br />
+                    <p class="owner-section">
+                        <strong>Owner</strong>:
+                        <span class="pet-owner">None</span>
+                    </p>
+                    <br />
+                    <button class="btn btn-default btn-primary btn-lg btn-block btn-adopt" type="button" data-id="0">Adopt</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
